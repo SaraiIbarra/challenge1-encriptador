@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo del sitio web-->
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1 class="titulo" style="margin-top: 30px;">Código secreto</h1>
+
+    <main class="main">
+      <section class="form box" style="margin-top: 60px;">
+        <form action="">
+          <h2 id="">Mensaje:</h2>
+          <label for="input-texto">Solo letras minúsculas, sin acentos ni caracteres especiales</label>
+          <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+          <input class="btn" type="button" value="¡Codificar!" id="btn-encriptar" onclick="encriptar()">
+          <input class="btn" type="button" value="¡Decodificar!" id="btn-desencriptar" onclick="desencriptar()">
+        </form>
+      </section>
+    
+      <section class="msg box" style="margin-top: 60px;">
+        <br>
+        <h2 id="">Mensaje codificado:</h2>
+        <br>
+        <textarea class="text-input" type="text" name="input-texto" id="msg" placeholder="Poner mensaje aqui"></textarea>
+        <input class="btn" type="button" value="Copiar" id="btn-copiar" onclick="copiar()">
+      </section>
+    </main>
+
+    <!--Archivos importados de JavaScript-->
+    <script src="script.js"></script>
+
+    <!--Pie de página-->
+    <footer>
+      Derechos Reservados &copy; 2022 <br>
+      Diseñado por: Sarai Ibarra López <br>
+      Challenge 1 - Alura LATAM y Oracle
+    </footer>
+  </body>
+</html>
